@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "llpixel";
+  src: url(LLPIXEL3.ttf) format("TrueType");
+}
+
+body{
+  margin: 0;
+  font-family: llpixel, monospace;
+  color: white;
+  text-align: center;
+}
+
+#zonaJuego{
+  position: relative;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.jugador{
+  position: absolute;
+  background-color: white;
+}
+
+#jugador1{
+  left: 0px;
+}
+
+#jugador2{
+  right: 0px;
+}
+
+#mensaje{
+  position: absolute;
+  width: 100%;
+  font-size: 3rem;
+  top: 39%;
+}
+
+.bola{
+  position: absolute;
+  border-radius: 50%;
+  width: 30px;
+  aspect-ratio: 1;
+  background-color: white;
+}
+
+#tablero{
+  position: absolute;
+  font-size: 6rem;
+  width: 100%;
+}
+
+.titilar{
+  animation-name: titilar;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes titilar{
+  0%{
+    opacity: 100%
+  }
+  49.99%{
+    opacity: 100%
+  }
+  50%{
+    opacity: 0;
+  }
+  99.99%{
+    opacity: 0;
+  }
+}
+
+#mensajePuntoJson, #instrucciones{
+  position: absolute;
+  font-size: 1rem;
+  bottom: 0%;
+  width: 100%;
+}
+
+kbd{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.119);
+  width: 20px;
+}
+
+a{
+  color: white;
+}
+
+.escondido{
+  opacity: 0;
+}
